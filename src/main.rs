@@ -163,8 +163,4 @@ fn main() {
 
     let mut cache = UsersCache::new();
     display_tree(&root, 0, &mut cache);
-
-    for path in paths.iter() {
-        println!("{}", path.display());
-    }
 }
