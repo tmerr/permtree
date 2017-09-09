@@ -316,7 +316,7 @@ fn main() {
     }
     
     for pathbuf in paths.iter() {
-        let root = prune(build_tree(&pathbuf, &None)).unwrap();
+        let root = build_tree(&pathbuf, &None);
         if args.command_mode {
             display_commands(&root);
         } else {
